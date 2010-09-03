@@ -55,4 +55,4 @@ def add_app_engine_sdk_path():
         # Hack to fix reports of import errors on Ubuntu 9.10.
         if 'google' in sys.modules:
             del sys.modules['google']
-        sys.path = [get_app_engine_sdk_path()] + sys.path
+        sys.path = [app_engine_sdk_path()] + sys.path
