@@ -29,7 +29,7 @@ def build_possible_paths():
     return paths
 
 
-def app_engine_sdk_path():
+def gae_sdk_path():
     """ Returns the App Engine SDK Path """
     paths = build_possible_paths()
     # Loop through all possible paths and look for the SDK dir.
@@ -47,7 +47,7 @@ def app_engine_sdk_path():
         sys.exit(1)
     return sdk_path
 
-def add_app_engine_sdk_path():
+def add_gae_sdk_path():
     """ Try to import the appengine code from the system path. """
     try:
         from google.appengine.api import apiproxy_stub_map
@@ -55,4 +55,4 @@ def add_app_engine_sdk_path():
         # Hack to fix reports of import errors on Ubuntu 9.10.
         if 'google' in sys.modules:
             del sys.modules['google']
-        sys.path = [app_engine_sdk_path()] + sys.path
+        sys.path = [gae_sdk_path()] + sys.path

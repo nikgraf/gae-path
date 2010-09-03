@@ -4,11 +4,11 @@
 
 To add App Engine SDK Path to sys.path
 
-    add_app_engine_sdk_path()
+    add_gae_sdk_path()
 
 Get the the App Engine SDK Path
 
-    app_engine_sdk_path()
+    gae_sdk_path()
 
 ## Credits
 
