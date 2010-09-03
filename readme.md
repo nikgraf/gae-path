@@ -12,7 +12,7 @@ Get the the App Engine SDK Path
 
 ## Credits
 
-* Nik Graf [@nikgraf](twitter.com/nikgraf)
+* Nik Graf [@nikgraf](http://twitter.com/nikgraf)
 
 Inspired by
 
